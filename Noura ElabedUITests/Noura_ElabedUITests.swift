@@ -1,9 +1,3 @@
-//
-//  Noura_ElabedUITests.swift
-//  Noura ElabedUITests
-//
-//  Created by Rahim Abbas on 3/28/25.
-//
 
 import XCTest
 

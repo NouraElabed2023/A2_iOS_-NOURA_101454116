@@ -1,9 +1,4 @@
-//
-//  Noura_ElabedTests.swift
-//  Noura ElabedTests
-//
-//  Created by Rahim Abbas on 3/28/25.
-//
+
 
 import Testing
 @testable import Noura_Elabed
