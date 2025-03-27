@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C38F1D9F2D95F23300BCAA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C38F1D862D95F23000BCAA45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C38F1D8D2D95F23000BCAA45;
+			remoteInfo = "Noura Elabed";
+		};
+		C38F1DA92D95F23300BCAA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C38F1D862D95F23000BCAA45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C38F1D8D2D95F23000BCAA45;
+			remoteInfo = "Noura Elabed";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C38F1D8E2D95F23000BCAA45 /* Noura Elabed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Noura Elabed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38F1D9E2D95F23300BCAA45 /* Noura ElabedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Noura ElabedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38F1DA82D95F23300BCAA45 /* Noura ElabedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Noura ElabedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C38F1D902D95F23000BCAA45 /* Noura Elabed */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Noura Elabed";
+			sourceTree = "<group>";
+		};
+		C38F1DA12D95F23300BCAA45 /* Noura ElabedTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Noura ElabedTests";
+			sourceTree = "<group>";
+		};
+		C38F1DAB2D95F23300BCAA45 /* Noura ElabedUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Noura ElabedUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C38F1D8B2D95F23000BCAA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C38F1D9B2D95F23300BCAA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C38F1DA52D95F23300BCAA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C38F1D852D95F23000BCAA45 = {
+			isa = PBXGroup;
+			children = (
+				C38F1D902D95F23000BCAA45 /* Noura Elabed */,
+				C38F1DA12D95F23300BCAA45 /* Noura ElabedTests */,
+				C38F1DAB2D95F23300BCAA45 /* Noura ElabedUITests */,
+				C38F1D8F2D95F23000BCAA45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C38F1D8F2D95F23000BCAA45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C38F1D8E2D95F23000BCAA45 /* Noura Elabed.app */,
+				C38F1D9E2D95F23300BCAA45 /* Noura ElabedTests.xctest */,
+				C38F1DA82D95F23300BCAA45 /* Noura ElabedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C38F1D8D2D95F23000BCAA45 /* Noura Elabed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C38F1DB22D95F23300BCAA45 /* Build configuration list for PBXNativeTarget "Noura Elabed" */;
+			buildPhases = (
+				C38F1D8A2D95F23000BCAA45 /* Sources */,
+				C38F1D8B2D95F23000BCAA45 /* Frameworks */,
+				C38F1D8C2D95F23000BCAA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C38F1D902D95F23000BCAA45 /* Noura Elabed */,
+			);
+			name = "Noura Elabed";
+			packageProductDependencies = (
+			);
+			productName = "Noura Elabed";
+			productReference = C38F1D8E2D95F23000BCAA45 /* Noura Elabed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C38F1D9D2D95F23300BCAA45 /* Noura ElabedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C38F1DB52D95F23300BCAA45 /* Build configuration list for PBXNativeTarget "Noura ElabedTests" */;
+			buildPhases = (
+				C38F1D9A2D95F23300BCAA45 /* Sources */,
+				C38F1D9B2D95F23300BCAA45 /* Frameworks */,
+				C38F1D9C2D95F23300BCAA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C38F1DA02D95F23300BCAA45 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C38F1DA12D95F23300BCAA45 /* Noura ElabedTests */,
+			);
+			name = "Noura ElabedTests";
+			packageProductDependencies = (
+			);
+			productName = "Noura ElabedTests";
+			productReference = C38F1D9E2D95F23300BCAA45 /* Noura ElabedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C38F1DA72D95F23300BCAA45 /* Noura ElabedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C38F1DB82D95F23300BCAA45 /* Build configuration list for PBXNativeTarget "Noura ElabedUITests" */;
+			buildPhases = (
+				C38F1DA42D95F23300BCAA45 /* Sources */,
+				C38F1DA52D95F23300BCAA45 /* Frameworks */,
+				C38F1DA62D95F23300BCAA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C38F1DAA2D95F23300BCAA45 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C38F1DAB2D95F23300BCAA45 /* Noura ElabedUITests */,
+			);
+			name = "Noura ElabedUITests";
+			packageProductDependencies = (
+			);
+			productName = "Noura ElabedUITests";
+			productReference = C38F1DA82D95F23300BCAA45 /* Noura ElabedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C38F1D862D95F23000BCAA45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					C38F1D8D2D95F23000BCAA45 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					C38F1D9D2D95F23300BCAA45 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = C38F1D8D2D95F23000BCAA45;
+					};
+					C38F1DA72D95F23300BCAA45 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = C38F1D8D2D95F23000BCAA45;
+					};
+				};
+			};
+			buildConfigurationList = C38F1D892D95F23000BCAA45 /* Build configuration list for PBXProject "Noura Elabed" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C38F1D852D95F23000BCAA45;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C38F1D8F2D95F23000BCAA45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C38F1D8D2D95F23000BCAA45 /* Noura Elabed */,
+				C38F1D9D2D95F23300BCAA45 /* Noura ElabedTests */,
+				C38F1DA72D95F23300BCAA45 /* Noura ElabedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C38F1D8C2D95F23000BCAA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C38F1D9C2D95F23300BCAA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C38F1DA62D95F23300BCAA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C38F1D8A2D95F23000BCAA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C38F1D9A2D95F23300BCAA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C38F1DA42D95F23300BCAA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C38F1DA02D95F23300BCAA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C38F1D8D2D95F23000BCAA45 /* Noura Elabed */;
+			targetProxy = C38F1D9F2D95F23300BCAA45 /* PBXContainerItemProxy */;
+		};
+		C38F1DAA2D95F23300BCAA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C38F1D8D2D95F23000BCAA45 /* Noura Elabed */;
+			targetProxy = C38F1DA92D95F23300BCAA45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C38F1DB02D95F23300BCAA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C38F1DB12D95F23300BCAA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C38F1DB32D95F23300BCAA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Noura Elabed/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lmm.Noura-Elabed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C38F1DB42D95F23300BCAA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Noura Elabed/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lmm.Noura-Elabed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C38F1DB62D95F23300BCAA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lmm.Noura-ElabedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noura Elabed.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Noura Elabed";
+			};
+			name = Debug;
+		};
+		C38F1DB72D95F23300BCAA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lmm.Noura-ElabedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noura Elabed.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Noura Elabed";
+			};
+			name = Release;
+		};
+		C38F1DB92D95F23300BCAA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lmm.Noura-ElabedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Noura Elabed";
+			};
+			name = Debug;
+		};
+		C38F1DBA2D95F23300BCAA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lmm.Noura-ElabedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Noura Elabed";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C38F1D892D95F23000BCAA45 /* Build configuration list for PBXProject "Noura Elabed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38F1DB02D95F23300BCAA45 /* Debug */,
+				C38F1DB12D95F23300BCAA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C38F1DB22D95F23300BCAA45 /* Build configuration list for PBXNativeTarget "Noura Elabed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38F1DB32D95F23300BCAA45 /* Debug */,
+				C38F1DB42D95F23300BCAA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C38F1DB52D95F23300BCAA45 /* Build configuration list for PBXNativeTarget "Noura ElabedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38F1DB62D95F23300BCAA45 /* Debug */,
+				C38F1DB72D95F23300BCAA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C38F1DB82D95F23300BCAA45 /* Build configuration list for PBXNativeTarget "Noura ElabedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38F1DB92D95F23300BCAA45 /* Debug */,
+				C38F1DBA2D95F23300BCAA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C38F1D862D95F23000BCAA45 /* Project object */;
+}
