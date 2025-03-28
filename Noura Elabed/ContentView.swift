@@ -25,42 +25,29 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                // Search Bar
                 TextField("Search Products", text: $searchText)
-                    .padding()
+                    .padding(12)
                     .background(Color(.systemGray6))
-                    .cornerRadius(8)
+                    .cornerRadius(10)
                     .padding(.horizontal)
-                
+                    .padding(.top, 10)
+
+                // Product List
                 List {
                     ForEach(filteredProducts, id: \.self) { product in
                         NavigationLink(destination: ProductDetailView(product: product)) {
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(product.name ?? "Unknown")
-                                        .font(.headline)
-                                        .foregroundColor(.blue)
-                                    Text(product.productDescription ?? "No description")
-                                        .font(.subheadline)
-                                        .foregroundColor(.gray)
-                                }
-                                Spacer()
-                                Text("$\(product.price, specifier: "%.2f")")
-                                    .font(.headline)
-                                    .foregroundColor(.green)
-                            }
-                            .padding()
-                            .background(Color.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 2)
+                            ProductRow(product: product)
                         }
                     }
                 }
-                .listStyle(PlainListStyle())
+                .listStyle(InsetGroupedListStyle())
+                .background(Color(.systemGray5))
                 .navigationTitle("Products")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action: {
-                            showAddProductView = true  // Show the Add Product screen
+                            showAddProductView = true
                         }) {
                             Label("Add Product", systemImage: "plus")
                         }
@@ -68,7 +55,7 @@ struct ContentView: View {
                 }
             }
             .background(Color(.systemGray5))
-            .sheet(isPresented: $showAddProductView) {  // Present AddProductView
+            .sheet(isPresented: $showAddProductView) {
                 AddProductView(isPresented: $showAddProductView)
                     .environment(\.managedObjectContext, viewContext)
             }
@@ -76,10 +63,36 @@ struct ContentView: View {
     }
 }
 
+// MARK: - Product Row UI Component
+struct ProductRow: View {
+    var product: Product
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(product.name ?? "Unknown")
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                Text(product.productDescription ?? "No description")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+            Spacer()
+            Text("$\(product.price, specifier: "%.2f")")
+                .font(.headline)
+                .foregroundColor(.green)
+        }
+        .padding()
+        .background(Color(.systemBackground))
+        .cornerRadius(10)
+        .shadow(color: Color.black.opacity(0.1), radius: 3, x: 0, y: 2)
+    }
+}
+
 // MARK: - Add Product View
 struct AddProductView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @Binding var isPresented: Bool  // To dismiss the view
+    @Binding var isPresented: Bool
     
     @State private var name = ""
     @State private var productDescription = ""
@@ -98,8 +111,13 @@ struct AddProductView: View {
                 }
                 
                 Section {
-                    Button("Add Product") {
-                        addProduct()
+                    Button(action: addProduct) {
+                        Text("Add Product")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     }
                 }
             }
@@ -107,7 +125,7 @@ struct AddProductView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") {
-                        isPresented = false  // Dismiss view
+                        isPresented = false
                     }
                 }
             }
@@ -115,7 +133,7 @@ struct AddProductView: View {
     }
     
     private func addProduct() {
-        guard let priceValue = Double(price) else { return }  // Ensure price is a valid number
+        guard let priceValue = Double(price) else { return }
         
         let newProduct = Product(context: viewContext)
         newProduct.id = UUID()
@@ -126,7 +144,7 @@ struct AddProductView: View {
         
         do {
             try viewContext.save()
-            isPresented = false  // Dismiss view after saving
+            isPresented = false
         } catch {
             print("Error saving product: \(error)")
         }
@@ -138,7 +156,7 @@ struct ProductDetailView: View {
     var product: Product
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 16) {
             Text(product.name ?? "Unknown")
                 .font(.largeTitle)
                 .fontWeight(.bold)
