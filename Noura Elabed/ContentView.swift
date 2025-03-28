@@ -103,4 +103,5 @@ class PersistenceController {
 
 #Preview {
     ContentView()
+        .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
 }
