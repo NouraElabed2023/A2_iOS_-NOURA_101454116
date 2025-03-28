@@ -12,6 +12,20 @@ struct ContentView: View {
         }
         .padding()
     }
+    private func addProduct() {
+            let newProduct = Product(context: viewContext)
+            newProduct.id = UUID()
+            newProduct.name = "New Product"
+            newProduct.productDescription = "Product Description"
+            newProduct.price = 10.0
+            newProduct.provider = "Provider"
+            
+            do {
+                try viewContext.save()
+            } catch {
+                print("Error saving product: \(error)")
+            }
+        }
 }
 
 
