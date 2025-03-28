@@ -9,6 +9,7 @@ struct ContentView: View {
     private var products: FetchedResults<Product>
     
     @State private var searchText = ""
+    @State private var showAddProductView = false  // Track when to show AddProductView
     
     var filteredProducts: [Product] {
         if searchText.isEmpty {
@@ -31,7 +32,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                 
                 List {
-                    ForEach(filteredProducts, id: \..self) { product in
+                    ForEach(filteredProducts, id: \.self) { product in
                         NavigationLink(destination: ProductDetailView(product: product)) {
                             HStack {
                                 VStack(alignment: .leading) {
@@ -58,32 +59,81 @@ struct ContentView: View {
                 .navigationTitle("Products")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: addProduct) {
+                        Button(action: {
+                            showAddProductView = true  // Show the Add Product screen
+                        }) {
                             Label("Add Product", systemImage: "plus")
                         }
                     }
                 }
             }
             .background(Color(.systemGray5))
+            .sheet(isPresented: $showAddProductView) {  // Present AddProductView
+                AddProductView(isPresented: $showAddProductView)
+                    .environment(\.managedObjectContext, viewContext)
+            }
+        }
+    }
+}
+
+// MARK: - Add Product View
+struct AddProductView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @Binding var isPresented: Bool  // To dismiss the view
+    
+    @State private var name = ""
+    @State private var productDescription = ""
+    @State private var price = ""
+    @State private var provider = ""
+
+    var body: some View {
+        NavigationView {
+            Form {
+                Section(header: Text("Product Details")) {
+                    TextField("Product Name", text: $name)
+                    TextField("Description", text: $productDescription)
+                    TextField("Price", text: $price)
+                        .keyboardType(.decimalPad)
+                    TextField("Provider", text: $provider)
+                }
+                
+                Section {
+                    Button("Add Product") {
+                        addProduct()
+                    }
+                }
+            }
+            .navigationTitle("New Product")
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") {
+                        isPresented = false  // Dismiss view
+                    }
+                }
+            }
         }
     }
     
     private func addProduct() {
+        guard let priceValue = Double(price) else { return }  // Ensure price is a valid number
+        
         let newProduct = Product(context: viewContext)
         newProduct.id = UUID()
-        newProduct.name = "New Product"
-        newProduct.productDescription = "Product Description"
-        newProduct.price = 10.0
-        newProduct.provider = "Provider"
+        newProduct.name = name
+        newProduct.productDescription = productDescription
+        newProduct.price = priceValue
+        newProduct.provider = provider
         
         do {
             try viewContext.save()
+            isPresented = false  // Dismiss view after saving
         } catch {
             print("Error saving product: \(error)")
         }
     }
 }
 
+// MARK: - Product Detail View
 struct ProductDetailView: View {
     var product: Product
     
@@ -117,6 +167,7 @@ struct ProductDetailView: View {
     }
 }
 
+// MARK: - Core Data Setup
 class PersistenceController {
     static let shared = PersistenceController()
     let container: NSPersistentContainer
@@ -131,6 +182,7 @@ class PersistenceController {
     }
 }
 
+// MARK: - Preview
 #Preview {
     ContentView()
         .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
