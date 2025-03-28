@@ -9,8 +9,8 @@ struct ContentView: View {
     private var products: FetchedResults<Product>
     
     @State private var searchText = ""
-    @State private var showAddProductView = false  // Track when to show AddProductView
-    
+    // Boolean variable which will track whether the product add modal is open or not
+    @State private var showAddProductView = false
     var filteredProducts: [Product] {
         if searchText.isEmpty {
             return Array(products)
@@ -62,8 +62,6 @@ struct ContentView: View {
         }
     }
 }
-
-// MARK: - Product Row UI Component
 struct ProductRow: View {
     var product: Product
     
@@ -88,8 +86,6 @@ struct ProductRow: View {
         .shadow(color: Color.black.opacity(0.1), radius: 3, x: 0, y: 2)
     }
 }
-
-// MARK: - Add Product View
 struct AddProductView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Binding var isPresented: Bool
@@ -150,8 +146,6 @@ struct AddProductView: View {
         }
     }
 }
-
-// MARK: - Product Detail View
 struct ProductDetailView: View {
     var product: Product
     
@@ -184,8 +178,6 @@ struct ProductDetailView: View {
         .cornerRadius(10)
     }
 }
-
-// MARK: - Core Data Setup
 class PersistenceController {
     static let shared = PersistenceController()
     let container: NSPersistentContainer
@@ -199,8 +191,6 @@ class PersistenceController {
         }
     }
 }
-
-// MARK: - Preview
 #Preview {
     ContentView()
         .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
