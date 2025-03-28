@@ -2,16 +2,54 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    
+    @Environment(\.managedObjectContext) private var viewContext
+      @FetchRequest(
+          sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: true)],
+          animation: .default)
+      private var products: FetchedResults<Product>
+      
+      @State private var searchText = ""
+      
+      var filteredProducts: [Product] {
+          if searchText.isEmpty {
+              return Array(products)
+          } else {
+              return products.filter { product in
+                  product.name?.localizedCaseInsensitiveContains(searchText) == true ||
+                  product.productDescription?.localizedCaseInsensitiveContains(searchText) == true
+              }
+          }
+      }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+           NavigationView {
+               VStack {
+                   TextField("Search Products", text: $searchText)
+                       .textFieldStyle(RoundedBorderTextFieldStyle())
+                       .padding()
+                   
+                   List {
+                       ForEach(filteredProducts, id: \..self) { product in
+                           NavigationLink(destination: ProductDetailView(product: product)) {
+                               VStack(alignment: .leading) {
+                                   Text(product.name ?? "Unknown")
+                                       .font(.headline)
+                                   Text(product.productDescription ?? "No description")
+                                       .font(.subheadline)
+                               }
+                           }
+                       }
+                   }
+                   .navigationTitle("Products")
+                   .toolbar {
+                       ToolbarItem(placement: .navigationBarTrailing) {
+                           Button(action: addProduct) {
+                               Label("Add Product", systemImage: "plus")
+                           }
+                       }
+                   }
+               }
+           }
+       }
     private func addProduct() {
             let newProduct = Product(context: viewContext)
             newProduct.id = UUID()
